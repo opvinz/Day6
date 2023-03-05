@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Project 1 - Day 6</title>
+    <link rel="icon" href="assets/images/147-1471079_jin-kazama-tattoo-clipart-png-download-draw-all.png" />
+    
+    <!-- Font Awesome 6 -->
+    <script src="https://kit.fontawesome.com/c92e202055.js" crossorigin="anonymous"></script>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/myprojectdetail.css" />
+
+    <script>
+        function loadUpData(){
+            const urlParams = new URLSearchParams(window.location.search);
+            const ProjectName = urlParams.get('ProjectName');
+            // const base64Image = urlParams.get('base64Image');
+            document.getElementById("inputProjectName").innerHTML = ProjectName
+            // document.getElementById("mainPicture").innerHTML = "<img src='"+base64Image+"' alt=''>"
+
+
+            const StartDate = urlParams.get('StartDate');
+            // const base64Image = urlParams.get('base64Image');
+            document.getElementById("inputStartDate").innerHTML = StartDate
+            // document.getElementById("mainPicture").innerHTML = "<img src='"+base64Image+"' alt=''>"
+      
+            const EndDate = urlParams.get('EndDate');
+            // const base64Image = urlParams.get('base64Image');
+            document.getElementById("inputEndDate").innerHTML = EndDate
+            // document.getElementById("mainPicture").innerHTML = "<img src='"+base64Image+"' alt=''>"
+
+            const Description = urlParams.get('Description');
+            // const base64Image = urlParams.get('base64Image');
+            document.getElementById("inputDescription").innerHTML = Description
+            // document.getElementById("mainPicture").innerHTML = "<img src='"+base64Image+"' alt=''>"
+
+            const Technologies= urlParams.get('Technologies');
+            // const base64Image = urlParams.get('base64Image');
+            document.getElementById("skills").innerHTML = Technologies
+            // document.getElementById("mainPicture").innerHTML = "<img src='"+base64Image+"' alt=''>"
+                        
+        }
+    </script>
+
+</head>
+<body onload="loadUpData()">
+
+   
+    <!-- Navbar -->
+    <nav style="width: 100%;">
+        <div class="nav-container">
+          <div class="nav-left">
+            <ul class="nav-menu">
+              <li>
+                <a href="index.html" style="display: flex; align-items: center">
+                  <img src="assets/images/Dumbways.png" alt="" style="width: 32px;margin-left: 24px;" />
+                </a>
+              </li>
+              <li>
+                <a href="index.html"id="homelink">Home</a>
+              </li>
+              <li>
+                <a href="myproject.html" id="myprojectlink" class="list-active">My Project</a>
+              </li>
+            </ul>
+          </div>
+          <audio controls> 
+            <source src="Aviccii - Wake me up.mp3">
+        </audio>
+          <div class="nav-right item-collapse">
+            <button id="Burgerbutton" style="background-color: transaparent; border: none; cursor: pointer;" onclick="openHamburger()">
+              <i class="fa-2x fa-solid fa-bars"></i>
+          </button>
+            <a href="contact_form.html" id="contactmelink">Contact Me</a>
+          </div>
+          
+          
+        </div>
+      </nav>
+  
+       <!-- burger -->
+      <div class="hamburger-nav-container" id="hamburger-nav-container">
+       <a href="index.html" >Home</a>
+       <a href="myproject.html" class="hamburger-active" >My Project</a>
+        <a href="contact_form.html">Contact Me</a>
+      </div>
+     
+  
+    <div class="container">
+        <h1 id="title">Dummy Project 1</h1>
+        <div class="content">
+            <div id="mainPicture" class="picture">
+                <img src="./assets/images/astronaut.jpg" alt="">
+            </div>
+            <div class="information">
+                <div class="duration">
+                    <h3>Duration</h3>
+                    <div id="distanceTime">
+                        <i class="fa-solid fa-calendar"></i>
+                        <span> 12 Jan 2021 - 11 Feb 2021</span>
+                    </div>
+                    <div id="distanceMonth">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>3 Month</span>
+                    </div>
+                </div>
+                <div class="technologies">
+                    <h3>Technologies</h3>
+                    <div class="technologyIcon">
+                        <span>
+                            <div class='fa-brands fa-node' alt="node">
+                            </div>
+                            &nbsp Node JS
+                        </span>
+                        <span>
+                            <div class="fa-brands fa-react" alt="reactjs">
+                            </div>
+                            &nbsp React JS
+                        </span>
+                        <span>
+                            <div class="fa-brands fa-vuejs" alt="vuejs">
+                            </div>
+                            &nbsp Vue JS
+                        </span>
+                        <span>
+                            <div class="fa-brands fa-laravel" alt="laravel">
+                            </div>
+                            &nbsp Laravel
+                        </span>
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+        <div class="text">
+            <p>
+                Jakarta, CNN Indonesia -- Bayang ketidakpastian masih diperkirakan masih membayangi ekonomi dunia pada 2023 mendatang. Penyebabnya, masih dipicu oleh perang yang berkecamuk antara Rusia dengan Ukraina.
+                Perang mengakibatkan gangguan pasokan beberapa komoditas penting dunia, seperti; minyak, gas, gandum. Gangguan memicu lonjakan harga komoditas dan inflasi yang kemudian mendorong sejumlah bank sentral dunia mengerak bunga acuan mereka yang berpotensi menekan kinerja pertumbuhan ekonomi.
+                Sejumlah lembaga dunia bahkan sudah membuat proyeksi atas potensi pelemahan kinerja pertumbuhan itu. Misalnya Dana Moneter Internasional (IMF) yang memperkirakan ekonomi global hanya tumbuh 2,9 persen pada tahun depan.
+                Sementara pertumbuhan ekonomi RI diproyeksi hanya 5 persen pada 2023. Angka ini mendapat revisi ketiga kalinya dari proyeksi April sebesar 5,9 persen dan Juli di kisaran 5,2 persen.
+                Bank Dunia juga memangkas proyeksi pertumbuhan ekonomi Indonesia pada 2023 dari 5,1 persen menjadi 4,8 persen. Sementara inflasi diproyeksi mencapai 4,5 persen tahun depan.
+                Kendati demikian, Direktur Bank Dunia untuk Indonesia dan Timor-Leste Satu Kahkonen mengatakan Indonesia dapat mempertahankan pertumbuhan yang kuat dan mengatasi potensi tantangan ke depan dengan beberapa inisiatif, di antaranya melanjutkan penerapan reformasi pajak yang akan membantu menciptakan ruang bagi investasi dan menciptakan ketahanan terhadap goncangan.
+                Kemudian, penetapan harga berbasis aturan untuk energi yang dapat menekan subsidi, serta menerapkan program jaring pengaman sosial yang dapat ditargetkan secara lebih efektif dan diperluas untuk menciptakan jaminan perlindungan.
+            </p>
+        </div>
+    </div>
+    
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

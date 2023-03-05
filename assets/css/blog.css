@@ -1,0 +1,103 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+
+.date {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 10px;
+}
+
+.skills {
+   display: flex;
+   flex-basis: 50%;
+   width: 50%;
+   margin-top: 10px;
+}
+
+.skills label {
+   margin: 5px 0;
+   display: inline-block;
+   color: #555;
+}
+
+.skills input {
+   box-shadow: 0 3px 5px rgba(134, 134, 134, 0.5);
+   border: 1px solid white;
+   padding: 10px;
+}
+
+/* MY PROJECT */
+.my-project {
+   padding: 80px;
+   font-size: 1.5rem;
+}
+
+.project_container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 50px;
+   margin-top: 50px;
+}
+
+.card {
+   /* background-color: red; */
+   padding: 10px;
+   border-radius: 5px;
+   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-heading img {
+   width: 100%;
+   border-radius: 5px;
+}
+
+.deadline {
+   font-size: 15px;
+   color: #888;
+}
+
+.card-body {
+   margin-top: 15px;
+}
+
+.description {
+   font-size: 16px;
+   text-align: justify;
+}
+
+.icon-skills i {
+   margin: 18px 5px;
+}
+
+.btn-change {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 5px;
+}
+
+.btn-change a {
+   flex: 1;
+   text-align: center;
+   text-decoration: none;
+   color: white;
+   background-color: #333;
+   font-size: 18px;
+   padding: 5px;
+   border-radius: 5px;
+   width: 100px;
+}
+.btnStyle{
+   margin-top: 50px;
+   padding: 8px 20px;
+   font-size: 17px;
+   background: black;
+   border-radius: 8px;
+   border: none;
+   color: #fff;
+   cursor: pointer;
+}

@@ -1,0 +1,230 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+
+nav {
+  background-color: #eee;
+}
+
+.nav-container {
+  /* width: 950px; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-left ul {
+  display: flex;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 0;
+}
+
+.nav-left li {
+  margin-right: 16px;
+}
+
+.nav-left li:hover {
+  color: #ff4500;
+}
+
+.nav-right a {
+  background-color: #000000e6;
+  color: #fff;
+  padding: 6px 18px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav-right a:hover {
+  color: #ff4500;
+}
+
+/* About Section */
+
+#about {
+  /* width: 950px; */
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #fff;
+  margin-top: 72px;
+  box-shadow: 0 0 36px #bbb;
+  border-radius: 8px;
+}
+
+#about .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+#about .container .left {
+  flex: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#about .profile-desc h1 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+#about .profile-desc p {
+  margin: 0;
+  text-align: justify;
+}
+
+
+#about .btn-contact {
+  margin-right: 5px;
+  background-color: #000000e6;
+  color: #fff;
+  padding: 6px 24px;
+  border-radius: 120px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#about .btn-contact:hover {
+  color: #ff4500;
+}
+
+#about .btn-downcv {
+  color: #000000e6;
+  padding: 6px 12px;
+  border-radius: 120px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#about .btn-downcv:hover > span {
+  color: #ff4500;
+}
+
+#about .socials a {
+  background-color: #000000e6;
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 100px;
+  text-align: center;
+}
+#about .socials a:hover {
+  color: #ff4500;
+}
+
+#about .socials i {
+  width: 24px;
+  height: 24px;
+  margin: auto;
+}
+
+#about .container .right {
+  flex: 30%;
+}
+
+#about .profile-card {
+  width: 320px;
+  overflow: hidden;
+  margin-left: auto;
+  box-shadow: 0 0 36px #bbb;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#about .profile-card img {
+  width: 100%;
+}
+
+#about .profile-card h3 {
+  margin: 0;
+  padding-top: 8px;
+}
+
+#about .profile-card p {
+  margin: 0;
+  padding-bottom: 8px;
+}
+.hamburger-nav-container {
+  font-size: 23px;
+  display: none;
+}
+
+.hamburger-nav-container .hamburger-active {
+  background-color: orangered;
+  font-weight: bold;
+}
+
+.hamburger-nav-container a {
+  color: white;
+  background-color: #9a9a9a;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+#barsmenu {
+  display: none;
+}
+#homelink{display:block}
+#contactmelink{display:block}
+#myprojectlink{display:block}
+#Burgerbutton{display:none}
+@media only screen and (max-width: 900px) {
+  #contactmelink{display:none}
+  #homelink{display:none}
+  #myprojectlink{display:none}
+    #Burgerbutton{display:block}
+
+  .card-container {
+      width: 100%;
+  }
+/* bila terpenuhi dijalankan klo lbh besar ga dijlnkan */
+  .left {
+      flex: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .right {
+      margin-left: 0;
+  }
+
+  section {
+      flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #contactmelink{display:none}
+  #Burgerbutton{display:block}
+  .skill {
+      flex-direction: column
+  }
+
+  #barsmenu {
+      display: block;
+  }
+
+  .item-collapse {
+      display: none;
+  }
+}

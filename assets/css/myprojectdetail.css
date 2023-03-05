@@ -1,0 +1,84 @@
+
+#blog{
+    font-weight: 600;
+}
+
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 50px 0;
+}
+.container h1 {
+    font-size: 40px;
+    text-transform: capitalize;
+    font-weight: 800;
+    text-align: center;
+}
+.content { 
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    gap: 70px;
+}
+.content .picture {
+    width: 100%;
+}
+.content .picture img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.content .information{
+    width: 35%;
+}
+.duration{
+    height: 50%;
+}
+.duration h3{
+    font-size: 24px;
+}
+#distanceTime,#distanceMonth {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 15px 0px;
+}
+.duration span{
+    color: #4d4d4e;
+    font-weight: 600;
+}
+.duration i{
+    font-size: 28px;
+}
+
+.technologies{
+    height: 50%;
+}
+.technologies h3 {
+    font-size: 24px;
+}
+.technologyIcon {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    padding-top: 10px;
+    color: #4d4d4e;
+}
+.technologyIcon span {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.technologyIcon img {
+    width: 28px;
+    height: 28px;
+    margin-right: 20px;
+}
+.text {
+    text-align: justify;
+    margin-top: 50px;
+    word-spacing: 2px;
+    font-size: 15px;
+    line-height: 22px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Day 6</title>
+    <link rel="icon" href="assets/images/147-1471079_jin-kazama-tattoo-clipart-png-download-draw-all.png" />
+
+    <!-- Font Awesome 6 -->
+    <script src="https://kit.fontawesome.com/c92e202055.js" crossorigin="anonymous"></script>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/contactform.css">
+   
+    <script src="./assets/js/script.js"></script>
+  </head>
+  <body style="width: 100%;padding: 0;margin:0;">
+    
+    <!-- Navbar -->
+    <nav style="width: 100%;">
+      <div class="nav-container">
+          <div class="nav-left">
+              <ul class="nav-menu">
+                  <li><a href="index.html" style="display: flex; align-items: center"><img src="assets/images/Dumbways.png" alt="" style="width: 32px;margin-left: 24px;" /></a></li>
+                  <li><a href="index.html"id="homelink">Home</a></li>
+                  <li><a href="myproject.html" id="myprojectlink" class="list-active">My Project</a></li>
+              </ul>
+          </div>
+          <audio controls> 
+              <source src="Aviccii - Wake me up.mp3">
+          </audio>
+          <div class="nav-right item-collapse">
+              <button id="Burgerbutton" style="background-color: transaparent; border: none; cursor: pointer;" onclick="openHamburger()">
+                  <i class="fa-2x fa-solid fa-bars"></i>
+              </button>
+              <a href="contact_form.html" id="contactmelink">Contact Me</a>
+          </div>
+      </div>
+    </nav>
+
+    <!-- Hamburger -->
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html">Home</a>
+      <a href="myproject.html">My Project</a>
+      <a class="hamburger-active" href="contact_form.html">Contact Me</a>
+    </div>
+    
+    <!-- Contact Form -->
+    <div class="main" style="background-color:white; width:100%;">
+      <div class="contact-form" >
+        <h3 style="font-weight: bold; font-size: 45px; text-align: center; font-family:'Trebuchet MS';margin:0px;color:black;">Get In Touch</h3>
+        <br>
+        
+        <label for="Name">Name:</label><br>
+        <input type="text" class="formstyle" id="name" Name="Name"><br><br>
+  
+        <label for="Email">Email:</label><br>
+        <input type="text" class="formstyle" id="email" name="Email"><br><br> 
+  
+        <label for="Phonenumber">Phone Number:</label><br>
+        <input type="number" class="formstyle" id="phone_number" name="Phone number"><br><br>
+
+        <label for="subject">Subject:</label><br>
+        <select name="subject" class="formstyle" id="subject">
+          <option selected disabled></option>
+          <option >Collaboration</option>
+          <option >Discussion</option>
+          <option >Hiring</option>
+        </select>
+        <br><br>
+            
+        <!-- <div style="margin:30px;"></div> -->
+        <label for="Address">Address:</label><br>
+        <input type="text" class="formstyle" id="address" name="Address"><br><br>
+        <p>Your Massage (Wajib Diisi)</p>
+        <textarea id="your_massage"class="formstyle"></textarea>
+        <br><br>
+
+        <div style="width: 200px;">
+          <button onclick="getData()" class="contact-submit">Kirim</button>
+        </div>
+        <br><br>
+        <br><br>
+
+      </div>
+    </div>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

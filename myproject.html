@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project - Day 6</title>
+    <link rel="icon" href="assets/images/147-1471079_jin-kazama-tattoo-clipart-png-download-draw-all.png" />
+
+    <!-- Font Awesome 6 -->
+    <script src="https://kit.fontawesome.com/c92e202055.js" crossorigin="anonymous"></script>
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/checkbox_style.css" />
+    <link rel="stylesheet" href="assets/css/myproject.css" />
+    <link rel="stylesheet" href="assets/css/blog.css" />
+  </head>
+  <body onload="loadDummy()" width="100%">
+     <!-- Navbar -->
+     <nav style="width: 100%;">
+      <div class="nav-container">
+        <div class="nav-left">
+          <ul class="nav-menu">
+            <li>
+              <a href="index.html" style="display: flex; align-items: center">
+                <img src="assets/images/Dumbways.png" alt="" style="width: 32px;margin-left: 24px;" />
+              </a>
+            </li>
+            <li>
+              <a href="index.html"id="homelink">Home</a>
+            </li>
+            <li>
+              <a href="myproject.html" id="myprojectlink" class="list-active">My Project</a>
+            </li>
+          </ul>
+        </div>
+        <audio controls> 
+          <source src="Aviccii - Wake me up.mp3">
+        </audio>
+        <div class="nav-right item-collapse">
+          <button id="Burgerbutton" style="background-color: transaparent; border: none; cursor: pointer;" onclick="openHamburger()">
+            <i class="fa-2x fa-solid fa-bars"></i>
+        </button>
+          <a href="contact_form.html" id="contactmelink">Contact Me</a>
+        </div>
+      </div>
+    </nav>
+
+     <!-- burger -->
+    <div class="hamburger-nav-container" id="hamburger-nav-container">
+      <a href="index.html">Home</a>
+      <a class="hamburger-active" href="myproject.html" >My Project</a>
+      <a href="contact_form.html">Contact Me</a>
+    </div>
+
+    <!-- myproject -->
+    <!-- Form -->
+    <div class="myproject">
+      <div class="myproject-form">
+        <div class="form-container">
+          <form onsubmit="return false">
+            <h1>ADD MY PROJECT</h1>
+            <div>
+              <label for="inputProjectName">Project Name</label>
+              <input type="text" id="inputProjectName" />
+            </div>
+            <div style="display:flex;">
+              <div style="padding-right: 8px ;">
+                <label for="inputStartDate">Start Date</label>
+                <input type="date" id="inputStartDate" />
+              </div>
+              <div style="padding-left:8px;">
+                <label for="inputEndDate">End Date</label>
+                <input type="date" id="inputEndDate" />
+              </div>
+            </div>
+
+            <div>
+              <label for="inputDescription">Description</label>
+              <textarea id="inputDescription"></textarea>
+            </div>
+
+            <div>
+              <label>Technologies</label><br>
+              <div style="display:flex;width:100%;padding: 8px;">
+                <div style="width: 240px;">
+                  <label class="container">node js
+                    <input type="checkbox" name="nodejs" id="nodejs" >
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+
+                <div>
+                  <label class="container">react js
+                    <input type="checkbox" name="reactjs" id="reactjs">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div style="display:flex;width:100%;padding: 8px;">
+                <div style="width: 240px;">
+                  <label class="container">vue js
+                    <input type="checkbox" name="vuejs" id="vuejs">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                
+                <div>
+                  <label class="container">laravel
+                    <input type="checkbox" name="laravel" id="laravel">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <label>Upload Image</label>
+              <div class="input-myproject-image-group">
+                <label for="uploadImg">
+                  <p>Choose file</p>
+                  <img src="assets/images/file.png" alt="file" />
+                </label>
+                <input type="file" id="uploadImg" hidden />
+              </div>
+            </div>
+            <div class="button-group">
+              <button onclick="getData()">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+     <!-- My Project -->
+      <section id="myProject" class="my-project">
+         <!-- <h1>my project</h1> -->
+         <div id="container"></div>
+      </section>
+      <!-- End My Project -->
+      <script src="assets/js/myproject.js"></script>
+      <script src="assets/js/index.js"></script>
+     </body>
+</html>

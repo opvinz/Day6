@@ -1,0 +1,43 @@
+
+.main {
+    padding-top: 24px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid  white;
+}
+
+.formstyle{
+    width: 100%;
+    background-color: #dfdedf;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.contact-form {
+    /* padding-top: 10px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+
+}
+
+.contact-submit{
+    float: left;
+    font-size: 15px;
+    padding: 15px;
+}
+
+.contact-submit{
+    color: white;
+    background-color: black;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1px;
+    font-size: 15px;
+}

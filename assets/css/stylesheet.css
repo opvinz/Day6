@@ -1,0 +1,168 @@
+
+
+.input_1{
+    background-color:white;
+    color: black;
+    /* font-weight: bold;  */
+    font-size: 24px; 
+    text-align: center; 
+    font-family:'Trebuchet MS';
+}
+
+
+html{padding: 0;margin: 0;}
+/* Navbar */
+nav {
+  display: flex;
+  background: #f4f3f3;
+  height: 90;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  flex: 50%;
+}
+
+nav div.left-side {
+  padding-left: 90px;
+}
+
+nav div.right-side {
+  padding-right: 90px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 40px;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+nav ul li a.list-active {
+  color: black;
+  font-weight: 700;
+}
+
+nav .right-side a {
+  font-size: 15px;
+  padding: 8px 20px;
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+  .main {
+      padding-top: 24px ;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 3px solid  white;
+    }
+    .formstyle{
+      width: 200px;
+      background-color: #dfdedf;
+      padding: 10px;
+      margin-top: 5px;
+      font-size: 15px;
+      border: 1px solid white;
+      border-radius: 5px;
+  }
+  
+  .contact-form {
+    padding-top: 10px;
+  }
+  
+  .contact-submit{float: left;
+    font-size: 15px;
+    padding: 15px;}
+
+    .contact-submit{
+      color: white;
+      background-color: black;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      margin-top: 1px;
+      font-size: 15px;
+  }
+  .hamburger-nav-container {
+    font-size: 23px;
+    display: none;
+  }
+  
+  .hamburger-nav-container .hamburger-active {
+    background-color: orangered;
+  }
+  
+  .hamburger-nav-container a {
+    color: white;
+    background-color: #9a9a9a;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #fff;
+  }
+  
+  #barsmenu {
+    display: none;
+  }
+  #homelink{display:block}
+  #contactmelink{display:block}
+  #myprojectlink{display:block}
+  #Burgerbutton{display:none}
+  @media only screen and (max-width: 900px) {
+    #contactmelink{display:none}
+    #homelink{display:none}
+    #myprojectlink{display:none}
+      #Burgerbutton{display:block}
+  
+    .card-container {
+        width: 100%;
+    }
+  /* bila terpenuhi dijalankan klo lbh besar ga dijlnkan */
+    .left {
+        flex: 100%;
+        display: flex;
+        justify-content: center;
+    }
+  
+    .right {
+        margin-left: 0;
+    }
+  
+    section {
+        flex-direction: column;
+    }
+  }
+  
+  @media only screen and (max-width: 550px) {
+    #contactmelink{display:none}
+    #Burgerbutton{display:block}
+    .skill {
+        flex-direction: column
+    }
+  
+    #barsmenu {
+        display: block;
+    }
+  
+    .item-collapse {
+        display: none;
+    }
+  }
+
+  
+
+  
